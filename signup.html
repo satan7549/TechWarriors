@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        #container {
+            width: 23%;
+            text-align: center;
+            margin: 5% auto auto;
+            color: white;
+            background-color: #4db6ac;
+            padding: 30px 60px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        h1 {
+            font-weight: 300;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form {
+            margin: 50px auto;
+            text-align: center;
+        }
+        form > input {
+            display: block;
+            margin: 6% auto auto;
+            padding: 20px;
+            width: 88%;
+            border: 0px;
+            font-size: 16px;
+        }
+        input::placeholder {
+            color: #90a4ae;
+        }
+        .button {
+            width: 99%;
+            margin-bottom: -10px;
+            cursor: pointer;
+            color: white;
+            padding: 25px;
+            background-color: #00897b;
+        }
+        body {
+            background-image: url("https://wallpaperaccess.com/full/1567736.png");
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>- Visitor -</h1>
+        <form>
+            <input type="text" class="data" name="name" placeholder="Full Name"/>
+            <input type="email" class="data" name="email" placeholder="Email"/>
+            <input type="text" class="data" name="organization" placeholder="Organization"/>
+            <input type="submit" class="button" value="SIGN UP"/>
+            <input type="submit" class="button" value="RETURN"/>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", whatTodo);
+
+    function whatTodo(event) {
+        event.preventDefault();
+        // You can put the anchorTags here
+    }
+</script>
